@@ -1,0 +1,24 @@
+{
+    "_index": "_index",
+    "column-order": [
+        "Datasets",
+        "volume",
+        "center_x",
+        "center_y",
+        "1st round cluster",
+        "2nd round subcluster",
+        "MERFISH cell type annotation",
+        "Region",
+        "Excitatory_vs_Inhibitory",
+        "Markers",
+        "Note",
+        "Neurotransmitter",
+        "Laminae",
+        "Gender",
+        "Mouse ID",
+        "Axial level",
+        "Section ID"
+    ],
+    "encoding-type": "dataframe",
+    "encoding-version": "0.2.0"
+}

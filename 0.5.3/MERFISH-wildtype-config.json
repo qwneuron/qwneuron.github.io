@@ -1,0 +1,106 @@
+{
+  "version": "1.0.15",
+  "name": "Adult mouse spinal cord",
+  "description": "MERFISH dataset wildtype",
+  "datasets": [
+    {
+      "uid": "wildtype",
+      "name": "wildtype",
+      "files": [
+        {
+          "fileType": "anndata.zarr",
+          "url": "https://qwneuron.github.io/spinalcord-merfish-webatlas/0.5.3/MERFISH-wildtype-anndata.zarr",
+          "options": {
+            "obsEmbedding": [
+              {
+                "path": "obsm/spatial",
+                "embeddingType": "SPATIAL",
+                "dims": [
+                  0,
+                  1
+                ]
+              },
+              {
+                "path": "obsm/X_umap",
+                "embeddingType": "X_UMAP",
+                "dims": [
+                  0,
+                  1
+                ]
+              }
+            ],
+            "obsLabels": [
+              {
+                "path": "obs/Section ID",
+                "obsLabelsType": "Section id"
+              }
+            ],
+            "obsSets": [
+              {
+                "name": "Cell type",
+                "path": "obs/MERFISH cell type annotation"
+              }
+            ],
+            "obsFeatureMatrix": {
+              "path": "X"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "coordinationSpace": {
+    "dataset": {
+      "A": "wildtype"
+    },
+    "embeddingType": {
+      "SPATIAL": "SPATIAL",
+      "X_UMAP": "X_UMAP"
+    }
+  },
+  "layout": [
+    {
+      "component": "scatterplot",
+      "coordinationScopes": {
+        "dataset": "A",
+        "embeddingType": "SPATIAL"
+      },
+      "x": 0,
+      "y": 0,
+      "w": 6,
+      "h": 12
+    },
+    {
+      "component": "scatterplot",
+      "coordinationScopes": {
+        "dataset": "A",
+        "embeddingType": "X_UMAP"
+      },
+      "x": 6,
+      "y": 0,
+      "w": 3,
+      "h": 6
+    },
+    {
+      "component": "obsSets",
+      "coordinationScopes": {
+        "dataset": "A"
+      },
+      "x": 9,
+      "y": 0,
+      "w": 3,
+      "h": 12
+    },
+    {
+      "component": "featureList",
+      "coordinationScopes": {
+        "dataset": "A"
+      },
+      "x": 6,
+      "y": 6,
+      "w": 3,
+      "h": 6
+    }
+  ],
+  "initStrategy": "auto"
+}
